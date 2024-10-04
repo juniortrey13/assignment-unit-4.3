@@ -20,9 +20,6 @@ function empty() {
 
 
 
-
-
-
 // DO NOT MODIFY
 // Used for automated testing
 try {
