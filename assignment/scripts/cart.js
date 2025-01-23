@@ -1,22 +1,31 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
-let basket = []; // created our empty basket
 
-function addItem ( item ) {
-    basket.push ( item );
-    return true;
+// created our empty basket
+let basket = []; // My global variable is basket and I am starting it off as an empty array
+console.log( 'Basket is:', basket );
+
+// created a function called addItem
+function addItem ( item ) {  // Takes an input parameter
+    basket.push ( item ); // Pushes my new item into the basket array.
+    return true; // Returns true to indicate succesfull addition.
 }
-
+// In the console add an item by typing addItem ( '[item]' ) and press ented
+// created a function called listItems
 function listItems(){
-    for ( let i = 0; i < basket.length; i++ ) {
-        console.log( basket[i] );
+    for ( let i = 0; i < basket.length; i++ ) { // Loops through my basket array
+        console.log( basket[i] ); // Logs each item in the basket
     }
 }
 
+// created a function called empty
 function empty() {
-    basket.length = 0;
+    basket.length = 0; // Resets the basket array without reassiging it
+    console.log('Emptying basket...');
 }
+
+const maxItems = 5; // we are using const because the value is not expected to change
 
 
 
