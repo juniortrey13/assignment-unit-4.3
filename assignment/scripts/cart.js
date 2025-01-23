@@ -41,7 +41,13 @@ function isFull() {
         return true;
     }
 }
-
+ function removeItem(item) {
+    const index = basket.indexOf(item);
+    if (index !== -1){
+        return basket.splice(index, 1)[0];
+    }
+    return null
+ }
 
 
 
